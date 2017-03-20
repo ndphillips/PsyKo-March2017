@@ -49,37 +49,71 @@
 </slide>
 
 <slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Goals of this workshop</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/excited.gif" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="75%" /></p>
+
+<h3>Get you excited about learning R!</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
   <article data-timings="">
     
 <div style='float:left;width:48%;' class='centered'>
   <h2>Goals of this workshop</h2>
 
 <ul>
-<li>Get you excited about learning R!</li>
 <li>You won&#39;t become a master of R today unfortunately -- but you will see how it can help solve (almost) all of your life&#39;s problems</li>
 </ul>
 
 </div>
 <div style='float:right;width:48%;'>
-  <p><img src="images/Rlogo.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="50%" /></p>
-
-<p><img src="images/excited.gif" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="75%" /></p>
+  <p><img src="images/Rlogo.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="50%" /></p>
 
 </div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>My R Journey</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
 <li>5 years struggling with SPSS</li>
-<li>5 years of glorious R.</li>
-</ol>
+</ul>
 
+<p><img src="images/spsschain.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="80%" /></p>
+
+<ul>
+<li>Never quite did what I wanted.</li>
+<li>Never could replicate my analyses</li>
+<li>Didn&#39;t know how to do anything else</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>5 years of glorious R.</li>
+</ul>
+
+<p><img src="images/rwings.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="80%" /></p>
+
+<ul>
+<li>The first few months were tough</li>
+<li>Soon, I discovered new things every day</li>
+<li>In for the rest of the workshop, I&#39;ll show you what you can do with R</li>
+</ul>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -91,6 +125,7 @@
   <article data-timings="">
     <ol>
 <li>Free and open source</li>
+<li>Tell R what you want to do with your keyboard, rather than your mouse.</li>
 <li>Statistics (duh)</li>
 <li>Plotting</li>
 <li>Simulations</li>
@@ -120,21 +155,61 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
+    <h2>Use your keyboard, not your mouse</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Can you imagine writing a paper with a mouse instead of a keyboard?</li>
+</ul>
+
+<p><img src="images/wheel3.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="80%" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>How can I do a t-test comparing Y as a function of X?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h3>How do I do a t-test in SPSS?</h3>
+
+<ol>
+<li>Click Z, Z, then Z. Then move X to _<em>, and Y to _</em>_</li>
+<li>Check a box for A, then B.</li>
+<li></li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <pre><code class="r">t.test(y ~ x, data = data)
+</code></pre>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
     <h2>Statistics</h2>
   </hgroup>
   <article data-timings="">
     <h3>Basics</h3>
 
 <ul>
-<li>Hypothesis tests</li>
-<li>Regression, ANOVA</li>
+<li>Hypothesis tests: <code>t.test()</code>, <code>cor.test()</code>, <code>chisq.test()</code></li>
+<li>Regression, ANOVA: <code>lm()</code>, <code>anova()</code></li>
 </ul>
 
 <h3>Advanced</h3>
 
 <ul>
-<li>Bayesian Statistics</li>
-<li>Heirarchical models</li>
+<li>Bayesian Statistics: <code>ttestBF()</code>, <code>anovaBF()</code>, <code>lmBF()</code></li>
+<li>Heirarchical models: <code>lmer()</code></li>
 </ul>
 
   </article>
@@ -218,7 +293,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-12" style="background:;">
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>Playing guitar</h2>
   </hgroup>
@@ -227,13 +302,13 @@
 <div style='float:left;width:48%;' class='centered'>
   <h3>SPSS</h3>
 
-<p><img src="images/chordbuddy.jpg" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="100%" /></p>
+<p><img src="images/chordbuddy.jpg" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="100%" /></p>
 
 </div>
 <div style='float:right;width:48%;'>
   <h3>R</h3>
 
-<p><img src="images/guitar.jpg" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="100%" /></p>
+<p><img src="images/guitar.jpg" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="100%" /></p>
 
 </div>
   </article>
@@ -245,7 +320,7 @@
     <h2>R has a learning curve...but it&#39;s worth it!</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="images/test.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="90%" /></p>
+    <p><img src="images/test.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="90%" /></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -359,92 +434,110 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='NA'>
+        data-slide=2 title='Goals of this workshop'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='My R Journey'>
+        data-slide=3 title='NA'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Why is R so great?'>
+        data-slide=4 title='My R Journey'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Free and open source'>
+        data-slide=5 title='Why is R so great?'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Statistics'>
+        data-slide=6 title='Free and open source'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Plotting'>
+        data-slide=7 title='Use your keyboard, not your mouse'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Simulations'>
+        data-slide=8 title='How can I do a t-test comparing Y as a function of X?'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Replication and Sharing'>
+        data-slide=9 title='Statistics'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Writing documents and APA style papers'>
+        data-slide=10 title='Plotting'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Bonuses!'>
+        data-slide=11 title='Simulations'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Playing guitar'>
+        data-slide=12 title='Replication and Sharing'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='R has a learning curve...but it&#39;s worth it!'>
+        data-slide=13 title='Writing documents and APA style papers'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Practical tutorial'>
+        data-slide=14 title='Bonuses!'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='I am ready to learn more R! What can I do?'>
+        data-slide=15 title='Playing guitar'>
          15
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='I am ready to learn more R! What can I do?'>
+        data-slide=16 title='R has a learning curve...but it&#39;s worth it!'>
          16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Practical tutorial'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='I am ready to learn more R! What can I do?'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='I am ready to learn more R! What can I do?'>
+         19
       </a>
     </li>
   </ul>

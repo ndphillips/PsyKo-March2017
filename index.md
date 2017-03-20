@@ -11,41 +11,69 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+--- 
+
+
+
+## Goals of this workshop
+
+
+
+<img src="images/excited.gif" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="75%" />
+
+### Get you excited about learning R!
+
+
 --- &twocol
 
 ***=left
 
 ## Goals of this workshop
 
-- Get you excited about learning R!
 - You won't become a master of R today unfortunately -- but you will see how it can help solve (almost) all of your life's problems
 
 ***=right
 
-<img src="images/Rlogo.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="50%" />
+<img src="images/Rlogo.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="50%" />
 
-<img src="images/excited.gif" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="75%" />
-
-
---- .class #id 
+--- &twocol
 
 ## My R Journey
 
-1. 5 years struggling with SPSS
-2. 5 years of glorious R.
+***=left
+
+- 5 years struggling with SPSS
+
+<img src="images/spsschain.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="80%" />
+
+- Never quite did what I wanted.
+- Never could replicate my analyses
+- Didn't know how to do anything else
+    
+***=right
+
+- 5 years of glorious R.
+
+<img src="images/rwings.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="80%" />
+
+
+- The first few months were tough
+- Soon, I discovered new things every day
+- In for the rest of the workshop, I'll show you what you can do with R
 
 --- .class #id 
 
 ## Why is R so great?
 
 1. Free and open source
-2. Statistics (duh)
-3. Plotting
-4. Simulations
-5. Replication and Sharing
-6. Writing reports and APA documents
-7. Contributing to the R community
-8. Bonuses!!
+2. Tell R what you want to do with your keyboard, rather than your mouse.
+3. Statistics (duh)
+4. Plotting
+5. Simulations
+6. Replication and Sharing
+7. Writing reports and APA documents
+8. Contributing to the R community
+9. Bonuses!!
 
 --- .class #id 
 ## Free and open source
@@ -54,15 +82,41 @@ knit        : slidify::knit2slides
 - Great free add ons like RStudio which make it easy.
 
 --- .class #id 
+## Use your keyboard, not your mouse
+
+- Can you imagine writing a paper with a mouse instead of a keyboard?
+
+<img src="images/wheel3.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="80%" />
+
+--- &twocol
+## How can I do a t-test comparing Y as a function of X?
+
+***=left
+### How do I do a t-test in SPSS?
+
+1. Click Z, Z, then Z. Then move X to __, and Y to ___
+2. Check a box for A, then B.
+3. 
+
+***=right
+
+
+```r
+t.test(y ~ x, data = data)
+```
+
+
+
+--- .class #id 
 ## Statistics
 
 ### Basics
-- Hypothesis tests
-- Regression, ANOVA
+- Hypothesis tests: `t.test()`, `cor.test()`, `chisq.test()`
+- Regression, ANOVA: `lm()`, `anova()`
 
 ### Advanced
-- Bayesian Statistics
-- Heirarchical models
+- Bayesian Statistics: `ttestBF()`, `anovaBF()`, `lmBF()`
+- Heirarchical models: `lmer()`
 
 --- .class #id 
 ## Plotting
@@ -106,17 +160,17 @@ knit        : slidify::knit2slides
 ***=left
 
 ### SPSS
-<img src="images/chordbuddy.jpg" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="100%" />
+<img src="images/chordbuddy.jpg" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="100%" />
 
 ***=right
 ### R
-<img src="images/guitar.jpg" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="100%" />
+<img src="images/guitar.jpg" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="100%" />
 
 
 --- .class #id 
 ## R has a learning curve...but it's worth it!
 
-<img src="images/test.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="90%" />
+<img src="images/test.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="90%" />
 
 --- .class #id 
 ## Practical tutorial
