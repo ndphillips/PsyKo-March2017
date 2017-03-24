@@ -608,3 +608,16 @@ knitr::include_graphics(c("images/rbloggers.png"))
 knitr::include_graphics(c("images/rusersfb.png"))
 ```
 
+---
+## Contact
+
+Website: http://ndphillips.github.io
+
+Email: Nathaniel.D.Phillips.is@gmail.com
+
+YaRrr! The Pirate's Guide to R https://bookdown.org/ndphillips/YaRrr/
+
+
+```{r, echo = FALSE, out.width = "25%", fig.align='center'}
+knitr::include_graphics(c("images/yarrr.png"))
+```
