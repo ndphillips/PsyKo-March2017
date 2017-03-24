@@ -202,11 +202,12 @@ Of course, R has all of the statistical analyes you could possibly want
 
 <img src="figure/unnamed-chunk-19-1.png" title="plot of chunk unnamed-chunk-19" alt="plot of chunk unnamed-chunk-19" width="90%" />
 
---- &twocol
+---&twocol
 
 ## Two plots of the same data
 
 ***=left
+
 ## Barplot
 
 <img src="figure/unnamed-chunk-20-1.png" title="plot of chunk unnamed-chunk-20" alt="plot of chunk unnamed-chunk-20" width="90%" />
@@ -219,13 +220,12 @@ Of course, R has all of the statistical analyes you could possibly want
 
 
 
-
-
---- &twocol
+---&twocol
 
 ## Scatterplot
 
 ***=left
+
 ## SPSS Scatterplot
 
 <img src="images/spssscatterplot.png" title="plot of chunk unnamed-chunk-22" alt="plot of chunk unnamed-chunk-22" width="90%" />

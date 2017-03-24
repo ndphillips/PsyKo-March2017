@@ -286,11 +286,12 @@ dat$Diet2[dat$Diet == 1] <- 3
 yarrr::pirateplot(weight ~ Diet2, data = subset(dat, Diet2 %in% c(1, 3)), theme = 2, cap.beans = TRUE, ylab = "Cholesterol Concentration", xlab = "Treatment")
 ```
 
---- &twocol
+---&twocol
 
 ## Two plots of the same data
 
 ***=left
+
 ## Barplot
 
 ```{r, echo = FALSE, out.width = "90%", dpi = 200}
@@ -318,13 +319,12 @@ yarrr::pirateplot(dv ~ condition, data = dat, theme = 2, cap.beans = TRUE)
 
 
 
-
-
---- &twocol
+---&twocol
 
 ## Scatterplot
 
 ***=left
+
 ## SPSS Scatterplot
 
 ```{r, echo = FALSE, out.width = "90%"}
