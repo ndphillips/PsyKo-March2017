@@ -4,3 +4,6 @@ NLP
 tm
 RColorBrewer
 wordcloud
+slidify
+shiny
+slidifyLibraries
