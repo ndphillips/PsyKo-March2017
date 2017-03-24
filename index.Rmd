@@ -288,6 +288,40 @@ yarrr::pirateplot(weight ~ Diet2, data = subset(dat, Diet2 %in% c(1, 3)), theme 
 
 --- &twocol
 
+## Two plots of the same data
+
+***=left
+## Barplot
+
+```{r, echo = FALSE, out.width = "90%", dpi = 200}
+set.seed(100)
+dat <- data.frame(condition = rep(c("A", "B", "C"), each = 200),
+                  id = 1:600,
+                  dv = c(rnorm(200, mean = 100, sd = 5),
+                         rnorm(200, mean = 100, sd = 30),
+                         rnorm(40, mean = 300, sd = 5),
+                         rnorm(160, mean = 50, sd = 5)
+                         )
+                  )
+
+papaja::apa_barplot(data = dat, factors = "condition", dv = "dv", id = "id")
+
+```
+
+***=right
+
+## Pirateplot
+
+```{r, echo = FALSE, out.width = "90%", fig.width = 7, fig.height = 7, dpi= 200}
+yarrr::pirateplot(dv ~ condition, data = dat, theme = 2, cap.beans = TRUE)
+```
+
+
+
+
+
+--- &twocol
+
 ## Scatterplot
 
 ***=left

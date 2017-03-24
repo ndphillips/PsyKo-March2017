@@ -204,24 +204,43 @@ Of course, R has all of the statistical analyes you could possibly want
 
 --- &twocol
 
+## Two plots of the same data
+
+***=left
+## Barplot
+
+<img src="figure/unnamed-chunk-20-1.png" title="plot of chunk unnamed-chunk-20" alt="plot of chunk unnamed-chunk-20" width="90%" />
+
+***=right
+
+## Pirateplot
+
+<img src="figure/unnamed-chunk-21-1.png" title="plot of chunk unnamed-chunk-21" alt="plot of chunk unnamed-chunk-21" width="90%" />
+
+
+
+
+
+--- &twocol
+
 ## Scatterplot
 
 ***=left
 ## SPSS Scatterplot
 
-<img src="images/spssscatterplot.png" title="plot of chunk unnamed-chunk-20" alt="plot of chunk unnamed-chunk-20" width="90%" />
+<img src="images/spssscatterplot.png" title="plot of chunk unnamed-chunk-22" alt="plot of chunk unnamed-chunk-22" width="90%" />
 
 ***=right
 
 ## R scatterplot
 
-<img src="figure/unnamed-chunk-21-1.png" title="plot of chunk unnamed-chunk-21" alt="plot of chunk unnamed-chunk-21" width="90%" />
+<img src="figure/unnamed-chunk-23-1.png" title="plot of chunk unnamed-chunk-23" alt="plot of chunk unnamed-chunk-23" width="90%" />
 
 ---
 
 ## R balloon plot
 
-<img src="figure/unnamed-chunk-22-1.png" title="plot of chunk unnamed-chunk-22" alt="plot of chunk unnamed-chunk-22" width="75%" style="display: block; margin: auto;" />
+<img src="figure/unnamed-chunk-24-1.png" title="plot of chunk unnamed-chunk-24" alt="plot of chunk unnamed-chunk-24" width="75%" style="display: block; margin: auto;" />
 
 
 --- &twocol
@@ -231,13 +250,13 @@ Of course, R has all of the statistical analyes you could possibly want
 ***=left
 ## Radar chart
 
-<img src="figure/unnamed-chunk-23-1.png" title="plot of chunk unnamed-chunk-23" alt="plot of chunk unnamed-chunk-23" width="90%" />
+<img src="figure/unnamed-chunk-25-1.png" title="plot of chunk unnamed-chunk-25" alt="plot of chunk unnamed-chunk-25" width="90%" />
 
 ***=right
 
 ## Text cloud
 
-<img src="figure/unnamed-chunk-24-1.png" title="plot of chunk unnamed-chunk-24" alt="plot of chunk unnamed-chunk-24" width="90%" />
+<img src="figure/unnamed-chunk-26-1.png" title="plot of chunk unnamed-chunk-26" alt="plot of chunk unnamed-chunk-26" width="90%" />
 
 
 ---
@@ -248,18 +267,18 @@ Of course, R has all of the statistical analyes you could possibly want
 
 
 
-<img src="images/simulationquestions.png" title="plot of chunk unnamed-chunk-26" alt="plot of chunk unnamed-chunk-26" width="90%" />
+<img src="images/simulationquestions.png" title="plot of chunk unnamed-chunk-28" alt="plot of chunk unnamed-chunk-28" width="90%" />
 
 ---
 ## Reason 6: Replication and sharing
 
 
-<img src="images/showresult.png" title="plot of chunk unnamed-chunk-27" alt="plot of chunk unnamed-chunk-27" width="70%" style="display: block; margin: auto;" />
+<img src="images/showresult.png" title="plot of chunk unnamed-chunk-29" alt="plot of chunk unnamed-chunk-29" width="70%" style="display: block; margin: auto;" />
 
 --- .class #id 
 ## Reason 7: Writing reports and APA style papers
 
-<img src="images/markdownexamples.png" title="plot of chunk unnamed-chunk-28" alt="plot of chunk unnamed-chunk-28" width="70%" style="display: block; margin: auto;" />
+<img src="images/markdownexamples.png" title="plot of chunk unnamed-chunk-30" alt="plot of chunk unnamed-chunk-30" width="70%" style="display: block; margin: auto;" />
 
 --- &twocol
 ## Reason 8: Write interactive websites and experiments with Shiny
@@ -274,7 +293,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/shiny.png" title="plot of chunk unnamed-chunk-29" alt="plot of chunk unnamed-chunk-29" width="100%" style="display: block; margin: auto;" />
+<img src="images/shiny.png" title="plot of chunk unnamed-chunk-31" alt="plot of chunk unnamed-chunk-31" width="100%" style="display: block; margin: auto;" />
 
 
 --- &twocol
@@ -288,7 +307,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/bigdata.jpg" title="plot of chunk unnamed-chunk-30" alt="plot of chunk unnamed-chunk-30" width="100%" style="display: block; margin: auto;" />
+<img src="images/bigdata.jpg" title="plot of chunk unnamed-chunk-32" alt="plot of chunk unnamed-chunk-32" width="100%" style="display: block; margin: auto;" />
 
 
 --- &twocol
@@ -301,7 +320,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/funprogramming.jpg" title="plot of chunk unnamed-chunk-31" alt="plot of chunk unnamed-chunk-31" width="100%" style="display: block; margin: auto;" />
+<img src="images/funprogramming.jpg" title="plot of chunk unnamed-chunk-33" alt="plot of chunk unnamed-chunk-33" width="100%" style="display: block; margin: auto;" />
 
 
 --- &twocol
@@ -322,7 +341,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/Rlogo.png" title="plot of chunk unnamed-chunk-32" alt="plot of chunk unnamed-chunk-32" width="100%" style="display: block; margin: auto;" />
+<img src="images/Rlogo.png" title="plot of chunk unnamed-chunk-34" alt="plot of chunk unnamed-chunk-34" width="100%" style="display: block; margin: auto;" />
 
 #### Questions before the tutorial?
 
@@ -349,7 +368,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/dirktanny.png" title="plot of chunk unnamed-chunk-33" alt="plot of chunk unnamed-chunk-33" width="70%" />
+<img src="images/dirktanny.png" title="plot of chunk unnamed-chunk-35" alt="plot of chunk unnamed-chunk-35" width="70%" />
 
 
 
@@ -374,7 +393,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/rbooks.png" title="plot of chunk unnamed-chunk-34" alt="plot of chunk unnamed-chunk-34" width="100%" />
+<img src="images/rbooks.png" title="plot of chunk unnamed-chunk-36" alt="plot of chunk unnamed-chunk-36" width="100%" />
 
 
 ---&twocol
@@ -388,9 +407,9 @@ Of course, R has all of the statistical analyes you could possibly want
 ***=right
 
 
-<img src="images/rbloggers.png" title="plot of chunk unnamed-chunk-35" alt="plot of chunk unnamed-chunk-35" width="70%" />
+<img src="images/rbloggers.png" title="plot of chunk unnamed-chunk-37" alt="plot of chunk unnamed-chunk-37" width="70%" />
 
-<img src="images/rusersfb.png" title="plot of chunk unnamed-chunk-36" alt="plot of chunk unnamed-chunk-36" width="70%" />
+<img src="images/rusersfb.png" title="plot of chunk unnamed-chunk-38" alt="plot of chunk unnamed-chunk-38" width="70%" />
 
 ---
 ## Contact
@@ -402,4 +421,4 @@ Email: Nathaniel.D.Phillips.is@gmail.com
 YaRrr! The Pirate's Guide to R https://bookdown.org/ndphillips/YaRrr/
 
 
-<img src="images/yarrr.png" title="plot of chunk unnamed-chunk-37" alt="plot of chunk unnamed-chunk-37" width="25%" style="display: block; margin: auto;" />
+<img src="images/yarrr.png" title="plot of chunk unnamed-chunk-39" alt="plot of chunk unnamed-chunk-39" width="25%" style="display: block; margin: auto;" />
