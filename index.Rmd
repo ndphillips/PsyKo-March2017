@@ -1,6 +1,6 @@
 ---
-title       : R, the solution to (almost) all of your life's problems
-subtitle    : 
+title       : R - The answer to your wildest data dreams
+subtitle    : Or, how I learned to stop worrying and love R
 author      : Nathaniel Phillips, University of Basel
 job         : PsyKo 2017, Bern
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -11,37 +11,23 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
---- 
+
+## Goal
 
 
+### There is exactly one goal in this workshop
 
-## Goals of this workshop
+---
 
-
+### Get you excited about learning R!
 
 ```{r, out.width = "75%", echo = FALSE}
 knitr::include_graphics(c("images/excited.gif"))
 ```
 
-### Get you excited about learning R!
-
 
 --- &twocol
 
-***=left
-
-## Goals of this workshop
-
-- You won't become a master of R today unfortunately -- but you will see how it can help solve (almost) all of your life's problems
-
-***=right
-
-```{r, echo = FALSE, out.width = "50%"}
-knitr::include_graphics("images/Rlogo.png")
-
-```
-
---- &twocol
 
 ## My R Journey
 
@@ -67,115 +53,21 @@ knitr::include_graphics("images/rwings.png")
 
 
 - The first few months were tough
-- Soon, I discovered new things every day
-- In for the rest of the workshop, I'll show you what you can do with R
-
---- .class #id 
-
-## Why is R so great?
-
-1. Free and open source
-2. Tell R what you want to do with your keyboard, rather than your mouse.
-3. Statistics (duh)
-4. Plotting
-5. Simulations
-6. Replication and Sharing
-7. Writing reports and APA documents
-8. Contributing to the R community
-9. Bonuses!!
-
---- .class #id 
-## Free and open source
-
-- Unlike SPSS or Matlab, you can always get access to R
-- Great free add ons like RStudio which make it easy.
-
---- .class #id 
-## Use your keyboard, not your mouse
-
-- Can you imagine writing a paper with a mouse instead of a keyboard?
-
-```{r, echo = FALSE, out.width = "80%"}
-knitr::include_graphics("images/wheel3.png")
-```
+- I discovered new things every day (and still am)
+- Pretty soon, I could reproduce 6 months of SPSS analyses in an afternoon.
 
 --- &twocol
-## How can I do a t-test comparing Y as a function of X?
-
-***=left
-### How do I do a t-test in SPSS?
-
-1. Click Z, Z, then Z. Then move X to __, and Y to ___
-2. Check a box for A, then B.
-3. 
-
-***=right
-
-```{r, eval = FALSE}
-t.test(y ~ x, data = data)
-```
-
-
-
---- .class #id 
-## Statistics
-
-### Basics
-- Hypothesis tests: `t.test()`, `cor.test()`, `chisq.test()`
-- Regression, ANOVA: `lm()`, `anova()`
-
-### Advanced
-- Bayesian Statistics: `ttestBF()`, `anovaBF()`, `lmBF()`
-- Heirarchical models: `lmer()`
-
---- .class #id 
-## Plotting
-
-- Graphics are like designer cars, when it's made by a great manufacturer (like R), you can see it. When it's made cheaply, (like SPSS), you can see that too.
-
-1. SPSS Barplot vs. R pirateplot
-2. SPSS scatterplot vs R scatterplot
-3. R network plot
-4. Fun plots: balloon plot
-
-
---- .class #id 
-## Simulations
-
-- Do you want to understand what a p-value is? Do a simulation!
-- Do you want to know what predictions your theory makes? Do a simulation?
-
---- .class #id 
-## Replication and Sharing
-
-- Unlike SPSS, with R, all of your analysis is documented in code.
-- No need to 'remember' what analyses you did.
-
---- .class #id 
-## Writing documents and APA style papers
-
-- Easily write reports that combine data, code, results, and test.
-- Did you know that you can write APA style papers with R?
-
---- .class #id 
-## Bonuses!
-
-1. Create HTML presentations (like this one!) with `slidify`
-2. Show interactive data and write experiments with Shiny
-3. Contribute to R by creating your own R packages
-
---- &twocol
-## Playing guitar
+## Two ways to learn guitar...
 
 ***=left
 
-### SPSS
+### ChordBuddy
 ```{r, echo = FALSE, out.width = "100%"}
 knitr::include_graphics("images/chordbuddy.jpg")
 ```
 
 ***=right
-### R
+### Fingers
 ```{r, echo = FALSE, out.width = "100%"}
 knitr::include_graphics("images/guitar.jpg")
 ```
@@ -184,31 +76,504 @@ knitr::include_graphics("images/guitar.jpg")
 --- .class #id 
 ## R has a learning curve...but it's worth it!
 
-```{r, echo = FALSE, out.width = "90%"}
-knitr::include_graphics("images/test.png")
+```{r, echo = FALSE, fig.width = 8, fig.height = 5, out.width = "80%", dpi = 200}
+par(mar = c(5, 10, 4, 1) + .1)
+plot(1, xlim = c(0, 4), ylim = c(0, 6), type = "n", xlab = "Investment\nyears...months...weeks?", 
+     ylab = "", yaxt = "n", main = "ChordBuddy vs. Fingers")
+grid()
+# spss curve
+spss.curve <- function(x) {x  ^ .2 * 2}
+curve(spss.curve, from = 0, 4, add = TRUE, col = "red", lwd = 4)
+
+r.curve <- function(x) {(x * .9) ^ 1.5}
+curve(r.curve, from = 0, 4, add = TRUE, col = "skyblue", lwd = 4)
+
+mtext("Simple Chords", at = 1, side = 2, las = 1, line = 2, cex = .8)
+mtext("Basic songs", at = 2, side = 2, las = 1, line = 2, cex = .8)
+mtext("Moderate songs", at = 3, side = 2, las = 1, line = 2, cex = .8)
+mtext("Advanced songs", at = 4, side = 2, las = 1, line = 2, cex = .8)
+mtext("John Mayer", at = 5, side = 2, las = 1, line = 2, cex = .8)
+mtext("Jimi Hendrix", at = 6, side = 2, las = 1, line = 2, cex = .8)
+
+text(.5, 2.5, "Chord Buddy")
+text(3.2, 5.5, "Fingers")
+
 ```
 
 --- .class #id 
-## Practical tutorial
+## R has a learning curve...but it's worth it!
 
-- Loading data.
-- Descriptive statistics
-- Plotting
-- T-tests, correlation tests
-- ANOVA
-- Regression
-- Simulations
-- APA style papers with papaja
+```{r, echo = FALSE, fig.width = 8, fig.height = 5, out.width = "80%", dpi = 200}
+par(mar = c(5, 10, 4, 1) + .1)
+plot(1, xlim = c(0, 4), ylim = c(0, 6), type = "n", xlab = "Investment\nyears...months...weeks?", 
+     ylab = "", yaxt = "n", main = "SPSS vs. R")
+grid()
+# spss curve
+spss.curve <- function(x) {x  ^ .2 * 2}
+curve(spss.curve, from = 0, 4, add = TRUE, col = "red", lwd = 4)
+
+r.curve <- function(x) {(x * .9) ^ 1.5}
+curve(r.curve, from = 0, 4, add = TRUE, col = "skyblue", lwd = 4)
+
+mtext("Descriptive\nStatististics", at = 1, side = 2, las = 1, line = 2, cex = .8)
+mtext("Hypothesis tests", at = 2, side = 2, las = 1, line = 2, cex = .8)
+mtext("Complex data\nmanagement", at = 3, side = 2, las = 1, line = 2, cex = .8)
+mtext("Elegant plots", at = 4, side = 2, las = 1, line = 2, cex = .8)
+mtext("Advanced statistics", at = 5, side = 2, las = 1, line = 2, cex = .8)
+mtext("Reproducible\nanalyses", at = 6, side = 2, las = 1, line = 2, cex = .8)
+
+text(.5, 2.5, "SPSS")
+text(3.2, 5.5, "R")
+
+```
+
 
 --- .class #id 
+
+## 10 reasons why R is so great
+
+```{r, echo = FALSE, out.width = "80%"}
+knitr::include_graphics("images/top10.png")
+```
+
+
+--- &twocol
+## Reason 1. Free and open source
+
+***=left
+- Because R is <em>free and open source</em>, you can always get access to R (unlike SPSS and MatLab)
+
+
+#### "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master. And in the area of computing, freedom means not using proprietary software." -- Richard M. Stallman
+
+<br>
+
+#### "Closed source software [like SPSS and MatLab] is useless crap because it satisfies neither repeatability nor inspectability" -- Titus Brown
+ 
+***=right
+
+```{r, echo = FALSE, out.width = "50%"}
+# knitr::include_graphics(c("images/opensource.png"))
+```
+
+```{r, echo = FALSE, out.width = "70%"}
+knitr::include_graphics(c("images/computermountain.jpg"))
+```
+
+```{r, echo = FALSE, out.width = "70%"}
+knitr::include_graphics(c("images/replicationcrisis.png"))
+```
+
+
+--- &twocol
+
+## Reason 2: Statistics
+
+***=left
+
+Of course, R has all of the statistical analyes you could possibly want
+
+### Basics
+- Hypothesis tests: `t.test()`, `cor.test()`, `chisq.test()`
+- Regression, ANOVA: `lm()`, `anova()`
+
+### Advanced
+- Bayesian Statistics: `ttestBF()`, `anovaBF()`, `lmBF()`
+- Heirarchical models: `lmer()`
+- Factor analysis: `factanal()`
+
+***=right
+
+```{r, echo = FALSE, out.width = "100%"}
+knitr::include_graphics(c("images/statsexamples.png"))
+```
+
+
+--- &twocol
+## Reason 3. Access to the latest, greatest
+
+***=left
+- Because it's open source, there is a huge community of R developers.
+- If someone comes up with something cool, they will share it and you'll get immediate access.
+
+***=right
+
+```{r, echo = FALSE, out.width = "50%"}
+# knitr::include_graphics(c("images/opensource.png"))
+```
+
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/getlatest.png"))
+```
+
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/community.png"))
+```
+
+<!-- --- .class #id  -->
+<!-- ## Use your keyboard, not your mouse -->
+
+<!-- - Doing statistical analyses with your mouse is as strange as using a mouse to write a paper. -->
+<!-- - Typing allows you to specify exactly what you want. -->
+
+<!-- ```{r, echo = FALSE, out.width = "50%"} -->
+<!-- knitr::include_graphics("images/wheel.jpg") -->
+<!-- ``` -->
+
+<!-- [https://www.youtube.com/watch?v=9BnLbv6QYcA](https://www.youtube.com/watch?v=9BnLbv6QYcA) -->
+
+<!-- --- &twocol -->
+<!-- ## How can I do a t-test comparing Y as a function of X? -->
+
+<!-- ***=left -->
+<!-- ### How do I do a t-test in SPSS? -->
+
+<!-- 1. Click Z, Z, then Z. Then move X to XX, and Y to YYY -->
+<!-- 2. Check a box for A, then B. -->
+<!-- 3. ... -->
+
+<!-- ***=right -->
+<!-- ### How do I do a t-test in R? -->
+<!-- ```{r, eval = FALSE} -->
+<!-- t.test(y ~ x, data = data) -->
+<!-- ``` -->
+
+
+
+--- &twocol
+
+***=left
+## Reason 4: Plotting
+
+- Graphics are like designer cars, when it's made by a great manufacturer (like R), you can see it. When it's made cheaply, (like SPSS), you can see that too.
+
+***=right
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/spsscouch.png"))
+```
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/rcouch.png"))
+```
+
+
+
+--- &twocol
+
+## Barplot
+
+***=left
+## SPSS Barplot
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/spssbarplot.png"))
+```
+
+***=right
+
+## R pirateplot
+
+```{r, echo = FALSE, out.width = "90%", fig.width = 7, fig.height = 7, dpi= 200}
+dat <- ChickWeight
+dat$weight <- dat$weight * 20 / 400
+dat$Diet2 <- dat$Diet
+dat$Diet2[dat$Diet == 3] <- 1
+dat$Diet2[dat$Diet == 1] <- 3
+
+yarrr::pirateplot(weight ~ Diet2, data = subset(dat, Diet2 %in% c(1, 3)), theme = 2, cap.beans = TRUE, ylab = "Cholesterol Concentration", xlab = "Treatment")
+```
+
+--- &twocol
+
+## Scatterplot
+
+***=left
+## SPSS Scatterplot
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/spssscatterplot.png"))
+```
+
+***=right
+
+## R scatterplot
+
+```{r, echo = FALSE, out.width = "90%", fig.width = 5, fig.height = 5, dpi= 200}
+set.seed(100)
+x <- rnorm(50, mean = 10, sd = 2)
+y <- x + rnorm(50, mean = 0, sd = 2)
+
+
+plot(x, y, xlab = "Total Income (US D)", ylab = "Car Purchase Price", yaxt = "n")
+axis(2, at = seq(0, 100, 2), las = 1)
+grid()
+```
+
+---
+
+## R balloon plot
+
+```{r, echo = FALSE, out.width = "75%", dpi= 200, fig.width = 8, fig.height = 6, fig.align = 'center'}
+
+set.seed(100)
+x <- rnorm(50, mean = 10, sd = 2)
+y <- x + rnorm(50, mean = 0, sd = 2)
+# Set up the plotting space
+plot(1, 
+     bty = "n",
+     xlim = c(0, 20),
+     ylim = c(0, 20),
+     type = "n", xlab = "", ylab = "", 
+     main = "Turning a scatterplot into a balloon plot!")
+
+# Add gridlines
+grid()
+
+# Add Strings with segments()
+segments(x0 = x + rnorm(length(x), mean = 0, sd = .1), 
+         y0 = y - 1, 
+         x1 = x, 
+         y1 = y, 
+         col = gray(.1, .95),
+         lwd = .5)
+
+# Add balloons
+points(x, y, 
+       cex = 2, # Size of the balloons
+       pch = 21, 
+       col = "white", # white border
+       bg = yarrr::piratepal("basel"))  # Filling color
+```
+
+
+--- &twocol
+
+## More R plots
+
+***=left
+## Radar chart
+
+```{r, echo = FALSE, out.width = "90%"}
+
+# Library
+library(fmsb)
+
+# Create data: note in High school for several students
+set.seed(99)
+data=as.data.frame(matrix( sample( 0:20 , 15 , replace=F) , ncol=5))
+colnames(data)=c("math" , "english" , "biology" , "music" , "R-coding" )
+rownames(data)=paste("mister" , letters[1:3] , sep="-")
+
+# To use the fmsb package, I have to add 2 lines to the dataframe: the max and min of each topic to show on the plot!
+data=rbind(rep(20,5) , rep(0,5) , data)
+
+
+#==================
+# Plot 1: Default radar chart proposed by the library:
+
+colors_border=c( rgb(0.2,0.5,0.5,0.9), rgb(0.8,0.2,0.5,0.9) , rgb(0.7,0.5,0.1,0.9) )
+colors_in=c( rgb(0.2,0.5,0.5,0.4), rgb(0.8,0.2,0.5,0.4) , rgb(0.7,0.5,0.1,0.4) )
+radarchart( data , axistype=1 , 
+#custom polygon
+pcol=colors_border , pfcol=colors_in , plwd=4 , plty=1,
+#custom the grid
+cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,20,5), cglwd=0.8,
+#custom labels
+vlcex=0.8 
+)
+legend(x=0.7, y=1, legend = rownames(data[-c(1,2),]), bty = "n", pch=20 , col=colors_in , text.col = "grey", cex=1.2, pt.cex=3)
+
+```
+
+***=right
+
+## Text cloud
+
+```{r, echo = FALSE, out.width = "90%", fig.width = 5, fig.height = 5, dpi= 200, message = FALSE, warning = FALSE}
+library(tm)
+library(wordcloud)
+comments <- read.table("data/comments.txt", sep = "\t", stringsAsFactors = FALSE)
+comments <- unlist(comments)
+comments <- VCorpus(VectorSource(comments))
+
+
+comments <- tm_map(comments, removePunctuation)
+comments <- tm_map(comments, removeNumbers)
+# added tolower
+comments <- tm_map(comments, content_transformer(tolower))
+words_to_remove <- c("said","from","what","was","game", "you", "your", "the", "and", "but", "told","over","more","other","have","last","with","this","that","such","when","been","says","will","also","where","why","would","today")
+comments <- tm_map(comments, removeWords, words_to_remove)
+wordcloud(comments)
+
+
+# strategy <- read.table("data/strategy.txt", sep = "\t", stringsAsFactors = FALSE)
+# strategy <- unlist(strategy)
+# strategy <- VCorpus(VectorSource(strategy))
+# 
+# 
+# strategy <- tm_map(strategy, removePunctuation)
+# strategy <- tm_map(strategy, removeNumbers)
+# # added tolower
+# strategy <- tm_map(strategy, content_transformer(tolower))
+# words_to_remove <- c("said","from","what","was","game", "you", "your", "the", "and", "but", "told","over","more","other","have","last","with","this","that","such","when","been","says","will","also","where","why","would","today")
+# strategy <- tm_map(strategy, removeWords, words_to_remove)
+# wordcloud(strategy)
+
+
+```
+
+
+---
+## Reason 5: Simulations
+
+- In R, you can run simulations to directly answer important statistical questions
+
+```{r, echo = FALSE, eval = FALSE}
+# Give me 10,000 p-values
+p.values <- sapply(1:1e5, 
+                   FUN = function(x) {
+  
+  t.test(rnorm(100, mean = 0, sd = 1))$p.value
+  
+})
+```
+
+
+```{r, echo = FALSE, out.width = "90%"}
+knitr::include_graphics(c("images/simulationquestions.png"))
+```
+
+---
+## Reason 6: Replication and sharing
+
+
+```{r, echo = FALSE, out.width = "70%", fig.align='center'}
+knitr::include_graphics(c("images/showresult.png"))
+```
+
+--- .class #id 
+## Reason 7: Writing reports and APA style papers
+
+```{r, echo = FALSE, out.width = "70%", fig.align='center'}
+knitr::include_graphics(c("images/markdownexamples.png"))
+```
+
+--- &twocol
+## Reason 8: Write interactive websites and experiments with Shiny
+
+***=left
+
+1. Create interactive websites and even write entire experiments with RShiny
+
+
+[https://econpsychbasel.shinyapps.io/ShinyBandit/](https://econpsychbasel.shinyapps.io/ShinyBandit/)
+
+
+***=right
+
+```{r, echo = FALSE, out.width = "100%", fig.align='center'}
+knitr::include_graphics(c("images/shiny.png"))
+```
+
+
+--- &twocol
+## Reason 9: R is a transferable skill
+
+***=left
+
+- R is one of the top languages for statistical analysis (along with Python).
+- If you learn R for psychology, you can use it in any other analytic field.
+
+
+***=right
+
+```{r, echo = FALSE, out.width = "100%", fig.align='center'}
+knitr::include_graphics(c("images/bigdata.jpg"))
+```
+
+
+--- &twocol
+## Reason 10: It's FUN
+
+***=left
+
+- You will have more fun with R than any other software, I promise.
+- People use SPSS because they have to, people use R because they want to.
+
+***=right
+
+```{r, echo = FALSE, out.width = "100%", fig.align='center'}
+knitr::include_graphics(c("images/funprogramming.jpg"))
+```
+
+
+--- &twocol
+## Why R is so great
+
+***=left
+
+1. Free and open source
+2. Always have the latest, greatest methods
+3. Tell R what you want to do with your keyboard, rather than your mouse.
+4. Statistics (duh)
+5. Plotting
+6. Simulations
+7. Replication and Sharing
+8. Writing reports and APA documents
+9. Contributing to the R community
+10. Bonuses!!
+
+***=right
+
+```{r, echo = FALSE, out.width = "100%", fig.align='center'}
+knitr::include_graphics(c("images/Rlogo.png"))
+```
+
+#### Questions before the tutorial?
+
+---
+## Tutorial
+
+### Get started 
+
+1. Open RStudio
+2. Open the `PsyKo.Rproj` file
+3. Open `rmds/PsyKo_RBasics.Rmd` and go through the basics (or view online at [http://rpubs.com/YaRrr/PsyKo-RBasics](http://rpubs.com/YaRrr/PsyKo-RBasics))
+4. Open `r/jordan_analyses.R` and replicate Jordan et al.
+5. Open `rmds/jordan_apa.Rmd` and explore writing APA articles
+
+---&twocol
 ## I am ready to learn more R! What can I do?
 
-| Book | Author | WebLink |
-|:------|:------|:------|
-| YaRrr! The Pirate's Guide to R|Me | [www.thepiratesguidetor.com](www.thepiratesguidetor.com) |
-| R for Data Science|Wickham & Grolemund | [http://r4ds.had.co.nz/](http://r4ds.had.co.nz/)
-| The R book | Crawley | [https://www.amazon.com/R-Book-Michael-J-Crawley/dp/0470973927](https://www.amazon.com/R-Book-Michael-J-Crawley/dp/0470973927) |
-| Discovering Statistics using R | Field & Miles | [https://www.amazon.com/Discovering-Statistics-Using-Andy-Field/dp/1446200469/](https://www.amazon.com/Discovering-Statistics-Using-Andy-Field/dp/1446200469/) |
+***=left
+
+1. Find someone who knows R to help you
+2. Get an R book or take an online course
+3. Join an R group on social media
+4. Attend an intensive R bootcamp
+
+***=right
+
+```{r, echo = FALSE, out.width = "70%"}
+knitr::include_graphics(c("images/dirktanny.png"))
+```
+
+
+
+--- &twocol
+## R books and Courses
+
+***=left
+
+| Book | Author | 
+|:------|:------|
+| YaRrr! The Pirate's Guide to R|Nathaniel Phillips | 
+| R for Data Science|Wickham & Grolemund |
+| The R book | Crawley | 
+| Discovering Statistics using R | Field & Miles | 
 
 <br>
 
@@ -217,13 +582,29 @@ knitr::include_graphics("images/test.png")
 |Coursera|[https://www.coursera.org/courses?query=R](https://www.coursera.org/courses?query=R) |
 |DataCamp |[https://www.datacamp.com/courses/free-introduction-to-r](https://www.datacamp.com/courses/free-introduction-to-r)|
 
-#### Social Media
-- www.r-bloggers.com, Facebook: R Users Psychology
+***=right
+
+```{r, echo = FALSE, out.width = "100%"}
+knitr::include_graphics(c("images/rbooks.png"))
+```
 
 
---- .class #id 
-## I am ready to learn more R! What can I do?
+---&twocol
+## Social Media
 
-- Attend a multi-day bootcamp.
-- Contact me at nathaniel.phillips@unibas.ch for future dates
+***=left
+
+- www.r-bloggers.com
+- Facebook: R Users Psychology
+
+***=right
+
+
+```{r, echo = FALSE, out.width = "70%"}
+knitr::include_graphics(c("images/rbloggers.png"))
+```
+
+```{r, echo = FALSE, out.width = "70%"}
+knitr::include_graphics(c("images/rusersfb.png"))
+```
 
