@@ -65,7 +65,7 @@ knitr::include_graphics("images/songwriter.jpg")
 ```
 
 --- &twocol
-## Two ways to learn guitar...
+## Two ways to learn to play songs....
 
 ***=left
 
@@ -581,11 +581,12 @@ knitr::include_graphics(c("images/Rlogo.png"))
 
 ### Get started 
 
-1. Open RStudio
-2. Open the `PsyKo.Rproj` file
-3. Open `rmds/PsyKo_RBasics.Rmd` and go through the basics (or view online at [http://rpubs.com/YaRrr/PsyKo-RBasics](http://rpubs.com/YaRrr/PsyKo-RBasics))
-4. Open `r/jordan_analyses.R` and replicate Jordan et al.
-5. Open `rmds/jordan_apa.Rmd` and explore writing APA articles
+1. Open the `PsyKo.zip file: Available at [https://dl.dropboxusercontent.com/u/7618380/PsyKo.zip](https://dl.dropboxusercontent.com/u/7618380/PsyKo.zip)
+2. Open the `PsyKo.Rproj` file in the folder.
+3. Learn the basics of using RStudio.
+4. Open `rmds/PsyKo_RBasics.Rmd` and go through the R basics (or view online at [http://rpubs.com/YaRrr/PsyKo-RBasics](http://rpubs.com/YaRrr/PsyKo-RBasics))
+5. Open `r/jordan_analyses.R` and replicate Jordan et al.
+6. Open `rmds/jordan_apa.Rmd` and explore writing APA articles
 
 ---&twocol
 ## I am ready to learn more R! What can I do?
@@ -600,7 +601,7 @@ knitr::include_graphics(c("images/Rlogo.png"))
 
 ***=right
 
-```{r, echo = FALSE, out.width = "70%"}
+```{r, echo = FALSE, out.width = "100%"}
 knitr::include_graphics(c("images/dirktanny.png"))
 ```
 
@@ -613,7 +614,7 @@ knitr::include_graphics(c("images/dirktanny.png"))
 
 | Book | Author | 
 |:------|:------|
-| YaRrr! The Pirate's Guide to R|Nathaniel Phillips | 
+| [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)|Nathaniel Phillips | 
 | R for Data Science|Wickham & Grolemund |
 | The R book | Crawley | 
 | Discovering Statistics using R | Field & Miles | 

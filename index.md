@@ -57,7 +57,7 @@ knit        : slidify::knit2slides
 <img src="images/songwriter.jpg" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="100%" />
 
 --- &twocol
-## Two ways to learn guitar...
+## Two ways to learn to play songs....
 
 ***=left
 
@@ -356,11 +356,12 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ### Get started 
 
-1. Open RStudio
-2. Open the `PsyKo.Rproj` file
-3. Open `rmds/PsyKo_RBasics.Rmd` and go through the basics (or view online at [http://rpubs.com/YaRrr/PsyKo-RBasics](http://rpubs.com/YaRrr/PsyKo-RBasics))
-4. Open `r/jordan_analyses.R` and replicate Jordan et al.
-5. Open `rmds/jordan_apa.Rmd` and explore writing APA articles
+1. Open the `PsyKo.zip file: Available at [https://dl.dropboxusercontent.com/u/7618380/PsyKo.zip](https://dl.dropboxusercontent.com/u/7618380/PsyKo.zip)
+2. Open the `PsyKo.Rproj` file in the folder.
+3. Learn the basics of using RStudio.
+4. Open `rmds/PsyKo_RBasics.Rmd` and go through the R basics (or view online at [http://rpubs.com/YaRrr/PsyKo-RBasics](http://rpubs.com/YaRrr/PsyKo-RBasics))
+5. Open `r/jordan_analyses.R` and replicate Jordan et al.
+6. Open `rmds/jordan_apa.Rmd` and explore writing APA articles
 
 ---&twocol
 ## I am ready to learn more R! What can I do?
@@ -375,7 +376,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 ***=right
 
-<img src="images/dirktanny.png" title="plot of chunk unnamed-chunk-36" alt="plot of chunk unnamed-chunk-36" width="70%" />
+<img src="images/dirktanny.png" title="plot of chunk unnamed-chunk-36" alt="plot of chunk unnamed-chunk-36" width="100%" />
 
 
 
@@ -386,7 +387,7 @@ Of course, R has all of the statistical analyes you could possibly want
 
 | Book | Author | 
 |:------|:------|
-| YaRrr! The Pirate's Guide to R|Nathaniel Phillips | 
+| [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)|Nathaniel Phillips | 
 | R for Data Science|Wickham & Grolemund |
 | The R book | Crawley | 
 | Discovering Statistics using R | Field & Miles | 
