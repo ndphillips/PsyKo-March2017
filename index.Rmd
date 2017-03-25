@@ -588,6 +588,7 @@ knitr::include_graphics(c("images/Rlogo.png"))
 2. Get an R book or take an online course
 3. Join an R group on social media
 4. Attend an intensive R bootcamp
+    - September, 2017: Basel
 
 ***=right
 
@@ -645,11 +646,13 @@ knitr::include_graphics(c("images/rusersfb.png"))
 ---
 ## Contact
 
-Website: http://ndphillips.github.io
+This presentation: [https://ndphillips.github.io/PsyKo-March2017/](https://ndphillips.github.io/PsyKo-March2017/)
+
+My Website: [http://ndphillips.github.io](http://ndphillips.github.io)
 
 Email: Nathaniel.D.Phillips.is@gmail.com
 
-YaRrr! The Pirate's Guide to R https://bookdown.org/ndphillips/YaRrr/
+YaRrr! The Pirate's Guide to R [https://www.thepiratesguidetor.com](https://www.thepiratesguidetor.com)
 
 
 ```{r, echo = FALSE, out.width = "25%", fig.align='center'}

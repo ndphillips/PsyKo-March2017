@@ -365,6 +365,7 @@ Of course, R has all of the statistical analyes you could possibly want
 2. Get an R book or take an online course
 3. Join an R group on social media
 4. Attend an intensive R bootcamp
+    - September, 2017: Basel
 
 ***=right
 
@@ -414,11 +415,13 @@ Of course, R has all of the statistical analyes you could possibly want
 ---
 ## Contact
 
-Website: http://ndphillips.github.io
+This presentation: [https://ndphillips.github.io/PsyKo-March2017/](https://ndphillips.github.io/PsyKo-March2017/)
+
+My Website: [http://ndphillips.github.io](http://ndphillips.github.io)
 
 Email: Nathaniel.D.Phillips.is@gmail.com
 
-YaRrr! The Pirate's Guide to R https://bookdown.org/ndphillips/YaRrr/
+YaRrr! The Pirate's Guide to R [https://www.thepiratesguidetor.com](https://www.thepiratesguidetor.com)
 
 
 <img src="images/yarrr.png" title="plot of chunk unnamed-chunk-39" alt="plot of chunk unnamed-chunk-39" width="25%" style="display: block; margin: auto;" />
