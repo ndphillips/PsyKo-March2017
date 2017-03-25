@@ -56,6 +56,14 @@ knitr::include_graphics("images/rwings.png")
 - I discovered new things every day (and still am)
 - Pretty soon, I could reproduce 6 months of SPSS analyses in an afternoon.
 
+
+--- 
+## So you want to become a song writer
+
+```{r, echo = FALSE, out.width = "100%"}
+knitr::include_graphics("images/songwriter.jpg")
+```
+
 --- &twocol
 ## Two ways to learn guitar...
 
